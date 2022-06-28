@@ -1,9 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>New Claims Page</title>
-    </head>
-    <body>
-        <h1>Claims Direct</h1>
-    </body>
+  <!-- Head start -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Direct Claims</title>
+    <link href="stylessheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Head end -->
+
+  <!-- Body start -->
+  <body>
+    <div>
+      <h1>Direct<span style="color: #00ff00">claims</span></h1>
+      <nav>
+        <ul>
+          <div class="dropdown">
+            <button class="dropbtn">New Claim</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Open Claims</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Search</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Archive</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <br />
+
+    <div>
+      <img
+        src="propertyclaim.png"
+        alt="petclaim"
+        style="width: 400px; height: 300px"
+      />
+      <img
+        src="carclaim.png"
+        alt="petclaim"
+        style="width: 400px; height: 300px"
+      />
+      <img src="petsclaim.png" alt="petclaim" style="width: 400px; height:
+      300px"" />
+    </div>
+
+    <div class="container">
+      <h2>Register new claim</h2>
+      <form action="somepage.html" method="get">
+        <!-- this should be post! -->
+
+        <!-- Policy Number -->
+        <label for="Policy Number *">Policy Number *</label>
+        <input type="number" name="policyNumber" id="policyNumber" required />
+
+        <!-- Type of Insurance -->
+        <label>Type of Insurance *</label>
+        <div class="radio-container">
+          <input
+            type="radio"
+            id="property"
+            value="property"
+            name="insuranceType"
+          />
+          <label class="radio-label" for="property">property</label>
+
+          <input type="radio" id="motor" value="motor" name="insuranceType" />
+          <label class="radio-label" for="motor">motor</label>
+
+          <input type="radio" id="pet" value="pet" name="insuranceType" />
+          <label class="radio-label" for="pet">pet</label>
+        </div>
+
+        <!-- Title of person -->
+        <label for="title">Title *</label>
+        <select id="title" name="title" required>
+          <option value="" disabled selected>-- select --</option>
+          <option value="mr">Mr</option>
+          <option value="ms">Mrs</option>
+          <option value="mx">Mx</option>
+        </select>
+
+        <!-- First Name -->
+        <label for="firstName">First Name *</label>
+        <input type="text" name="firstName" id="firstName" required />
+        <!-- Surname -->
+        <label for="surname">Surname *</label>
+        <input type="text" name="surname" id="surname" required />
+        <!-- Claim Start -->
+        <label for="Claim Start">Claim Start Date</label>
+        <input type="date" id="claimStart" name="claimStart" />
+        <!-- Claim Amount -->
+        <label for="Claim Amount">Claim Amount (approx)</label>
+        <input type="number" name="claimAmount" id="claimAmount" required />
+        <!-- Reason for Claim -->
+        <label for="Claim Reason">Claim Reason (Please enter details)</label>
+        <input type="text" name="claimReason" id="claimReason" required />
+        <!-- Register Button -->
+        <button type="button" class="button">Register</button>
+      </form>
+    </div>
+
+    <!-- Footer start -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Direct<span>claims</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">Blog</a>
+
+          <a href="#">Pricing</a>
+
+          <a href="#">About</a>
+
+          <a href="#">Faq</a>
+
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Direct Claims © 2022</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>1 Main Avenue</span> Grove Beach, North Carolina</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@company.com">DirectClaims@company.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Voted the top claims distributor for the last 5 years.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </body>
+  <!-- Body end -->
 </html>
