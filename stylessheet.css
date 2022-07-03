@@ -1,31 +1,56 @@
 
-/* Main Heading and Title */
-h1 {
-    font-size: 35px;
-    padding: 35px;
-    background: #0000FF;
-    color: #FFFFFF;
-    font: normal 36px 'Open Sans', cursive;
-    margin-top: -20px;
-    margin-left: -10px;
-    margin-right: 0px;
+.header{
+  background-color: #0000FF;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.headtitle{
+  font-size: 45px;
+  color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+  margin-left: 25px;
+}
+
+/*displays the background color of the whole body */
+body {
+    background: #ebebeb;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav for dropdowns */
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin-left: 700px;
+  margin-top: -30px;
+}
+
+/* Phone contact */
+.phonecontact{
+  margin-left: 1400px;
+  margin-top: -90px;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+  position:relative;
+  display:inline-block;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background: #92999f;
-    color: #00FF00;
-    padding: 20px;
+    background: #00FF00;
+    color: #FFFFFF;
+    padding: 10px;
     font: normal 18px 'Open Sans', cursive;
     border: 2px #000 solid;
     margin-right: auto;
+    margin-top: -50px;
     cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position:relative;
-    display:inline-block;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -55,15 +80,48 @@ h1 {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #0000FF;}
 
-  /*displays the background color of the whole body */
-body {
-    background: #ebebeb;
-    font-family: 'Poppins', sans-serif;
+.logon{
+  width: 330px;
+  float: left;
+  margin-left: 1200px;
+  margin-top: -115px;
+}
+
+/* Welcome */
+.welcome{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+}
+
+/* Boxed Welcome message Box */
+.boxed {
+  border: 1px solid #00FF00;
+  width: 1020px;
+  margin-left: 450px;
+  margin-bottom: 10px;
+  background-color: #0000FF;
+  color:  #ffffff;
+  margin-top: 20px;
+}
+
+/* Paragraph Welcome message Box */
+.par{
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  line-height: 25px;
 }
 
 /* images */
+.images{
+  width: auto;
+  height: auto;
+  margin-left: 330px;
+  margin-top: 0px;
 
-
+}
 
 h2 {
   font-size: 35px;
@@ -78,7 +136,7 @@ h2 {
 
 /*displays the border of the container */
 .container {
-    width: 600px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
@@ -107,6 +165,10 @@ input[type="radio"] {
     display: inline-block;
 }
 
+.hide {
+  display: none;
+}
+
 input, select {
     margin-bottom: 10px;
     display: block;
@@ -119,12 +181,9 @@ table {
     border-collapse: collapse;
 }
 
-.tableHeading {
-    cursor: pointer;
-}
-
+/* Register button */
 .button {
-  background-color: #0000FF;; /* Green */
+  background-color: #0000FF;; /* blue */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -293,7 +352,7 @@ section {
 }
 
 .footer-distributed .footer-icons{
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 .footer-distributed .footer-icons a{
@@ -301,14 +360,12 @@ section {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #ffffff;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
@@ -337,3 +394,6 @@ section {
 }
 
   /* footer styling - end */
+
+
+
